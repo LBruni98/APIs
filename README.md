@@ -13,3 +13,13 @@ An SDK, or Software Development Kit is a kit used for creating a program, provid
 The difference between that of APIs and SDKs is that the latter are used for the creation of applications regardless of system and purpose while APIs are only used for specific purposes but with one main purpose; communicating with other applications.
 However, SDKs do include an API for the whole reason of communications between applications, so it is fairly reliant on the APIs use, using them for the functions of the application. For instance, the Java Development kit, along with the compilers and other tools, has an API which is the libraries that make up its core programming language, for the developers to use within the SDK.
 
+## Incorporating an API
+One such game that hit the market recently was ‘Assetto Corsa Competizione’, a racing simulator that aims to replicate the real world feeling of motorsports, by letting players be able to drive real cars with their exact specifications and are able to tune their cars to help with what race they are doing. The game includes real life race tracks and includes different racing divisions based on the type of cars used, along with many other features to accurately mimic actual motorsports. At the moment, the game is in early access, so it seems that it can be open to many ideas.
+
+Most competitive games implement an API in terms of analysing stats and play sessions of the player, and in turn use that data to help out in matchmaking and leagues. In the eSports leagues, this is used heavily and can determine the best players from a league, making for a very competitive environment.
+
+The idea is to have an API in Assetto Corsa Competizione that incorporates the same features that most competitive games have; to track the players’ stats. The main element of Assetto Corsa Competizione is that the sim racing aesthetic will come onto the multiplayer side of the game, so it would be beneficial to have an API that retrieves a player’s stats for use in terms of matchmaking and leagues.
+
+Another use of the API being incorporated into the game would be use its prequel’s (Assetto Corsa) modding capabilities. That game allowed for players to create tracks based on the data from google maps or similar to help with creations of even more race tracks. It worked by receiving that data; getting elements such as land height and location data to turn the land into a playable area. This in turn would help expand the amount of content from the community and add to playability.
+
+
