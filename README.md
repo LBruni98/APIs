@@ -22,4 +22,5 @@ The idea is to have an API in Assetto Corsa Competizione that incorporates the s
 
 Another use of the API being incorporated into the game would be use its prequel’s (Assetto Corsa) modding capabilities. That game allowed for players to create tracks based on the data from google maps or similar to help with creations of even more race tracks. It worked by receiving that data; getting elements such as land height and location data to turn the land into a playable area. This in turn would help expand the amount of content from the community and add to playability.
 
-
+## APIs with a range of uses
+Many APIs are used for a variety of purposes, be it to retrieve specific types of data or to communicate with other applications to access different features. The Steam Web API is a web based API used to access Steamworks features, which these features are things like the stats and achievements and interacting with other steam users.
