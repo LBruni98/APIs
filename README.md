@@ -6,7 +6,6 @@ APIs are needed to help with data access and the mechanics to help make the soft
 ### Use of an API
 There are different APIs that can be used for various reasons, for commercial and business use other than just for a developer. Twitter APIs allows for developers to gain access to the core twitter data and to allow access to search data and trend data to interact with. YouTube API allows for the integration of YouTube videos onto websites, rather than just linking the video and can also allow for data analysis on the videos.
 
-
 ## Relationship with SDKs
 An SDK, or Software Development Kit is a kit used for creating a program, providing the user a set of tools, libraries, code samples and guides in order for developers to create the application, be it either for software framework, computers, operating systems or video game consoles.
 
@@ -24,3 +23,6 @@ Another use of the API being incorporated into the game would be use its prequel
 
 ## APIs with a range of uses
 Many APIs are used for a variety of purposes, be it to retrieve specific types of data or to communicate with other applications to access different features. The Steam Web API is a web based API used to access Steamworks features, which these features are things like the stats and achievements and interacting with other steam users.
+
+
+#### References
