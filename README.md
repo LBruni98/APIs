@@ -32,6 +32,14 @@ Other Websites can use the Steam Web API for use on their own services. Communit
 Being that APIs are used primarily for data based services, it would pose as a great risk should the data being taken be used for malicious intent. This section of APIs will evaluate the security exploits and potential attacks that surround that of APIs.
 
 ### API based Attacks
+#### Parameter Attacks
+This submits unexpected data to take advantage of weaknesses in a database or program, SQL attacks being a prime variant of parameter attack. How this ties into APIs is that it states the parameter’s primary usage via name, making the attacker’s job easier.
+
+#### Identity attacks
+In order to help an API recognize an app, they need a code of some sort. This is known as an API key and apart from identifying the app, these have to be secret and hidden by the developers. The problem arises that it is fairly easy to uncover them and in turn can be used by attackers, commonly, by creating an accurate representation of a legitimate app to take users’ credentials for their own gain.
+
+#### Man in the Middle
+Within an interaction between a user/app and an API, it is possible for an attack to stand between them, intercepting the traffic and interfering with the conversation. These attacks, so called Man in the Middle, have an attacker intercept to have the interaction happen with them, rather than the API, at which here they can receive anything important to the user such as personal or bank account information. An attack like this is possible because of the lack of an API making use of the SSL/TLS layer properly, if not at all.
 
 ```
 GENERAL INTRODUCTION (DONE)
