@@ -30,8 +30,11 @@ Other Websites can use the Steam Web API for use on their own services. Communit
 
 ## Security Issues surrounding APIs
 Being that APIs are used primarily for data based services, it would pose as a great risk should the data being taken be used for malicious intent. This section of APIs will evaluate the security exploits and potential attacks that surround that of APIs.
+
+### API based Attacks
+
 ```
-GENERAL INTRODUCTION ()
+GENERAL INTRODUCTION (DONE)
 
 SECTION(S) ON HOW THE API AFFECT SECURITY/A PROGRAM ()
 
