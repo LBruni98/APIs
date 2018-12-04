@@ -22,9 +22,9 @@ The idea is to have an API in Assetto Corsa Competizione that incorporates the s
 Another use of the API being incorporated into the game would be use its prequel’s (Assetto Corsa) modding capabilities. That game allowed for players to create tracks based on the data from google maps or similar to help with creations of even more race tracks. It worked by receiving that data; getting elements such as land height and location data to turn the land into a playable area. This in turn would help expand the amount of content from the community and add to playability.
 
 ## APIs with a range of uses
-Many APIs are used for a variety of purposes, be it to retrieve specific types of data or to communicate with other applications to access different features. The Steam Web API is a web based API used to access Steamworks features, which these features are things like the stats and achievements and interacting with other steam users.
+Many APIs are used for a variety of purposes, be it to retrieve specific types of data or to communicate with other applications to access different features. The Steam Web API is a web based API used to access Steamworks features, which these features are things like the stats and achievements and interacting with other steam users[3].
 
-The API can be used by other web services but mostly by steam itself for any feature that is included in the steam store, anything from the store of steam games, the library of games that the player owns, the community hub and even the player’s activity. This is the general features that the player has access to when utilising steam and all receives data in relation to that feature. Steam Web API can also access data in regards to multiplayer games and achievements that can be used for comparison as well as just return the data of global players.
+The API can be used by other web services but mostly by steam itself for any feature that is included in the steam store, anything from the store of steam games, the library of games that the player owns, the community hub and even the player’s activity. This is the general features that the player has access to when utilising steam and all receives data in relation to that feature. Steam Web API can also access data in regards to multiplayer games and achievements that can be used for comparison as well as just return the data of global players[4].
 
 Other Websites can use the Steam Web API for use on their own services. Community gaming trading websites have come up ever since Valve implemented an item feature in Team Fortress 2 that allows for users to craft and trade their items and as such, these websites can display trade advertisements and receiving the data based on that item, located in their steam inventory. There are sites similar that offer similar services using the Steam Web API, such as weapon skins from other games that utilise the same item based features.
 
@@ -34,6 +34,5 @@ Other Websites can use the Steam Web API for use on their own services. Communit
 #### References
 1. Vangie Beal (2000). API - application program interface. [online]. Webopedia. Available from: <https://www.webopedia.com/TERM/A/API.html>. [Accessed 6 November 2018].
 2. Margaret Rouse (2005). software developer's kit (SDK). [online]. WhatIs.com. Available from: <https://whatis.techtarget.com/definition/software-developers-kit-SDK>. [Accessed 6 November 2018].
-3.SteamWorks [online]. (n.d). Available from: <https://partner.steamgames.com/doc/webapi_overview>. [Accessed 4 December 2018].
-4.
-Steam Web API [online]. (2010). Available from: <https://developer.valvesoftware.com/wiki/Steam_Web_API>. [Accessed 4 December 2018].
+3. SteamWorks [online]. (n.d). Available from: <https://partner.steamgames.com/doc/webapi_overview>. [Accessed 4 December 2018].
+4. Steam Web API [online]. (2010). Available from: <https://developer.valvesoftware.com/wiki/Steam_Web_API>. [Accessed 4 December 2018].
