@@ -4,7 +4,7 @@ An API, or Application Programming Interface, is set of functions, routines and 
 APIs are needed to help with data access and the mechanics to help make the software function. Retrieving data is key and APIs allow for this to be done as fast as possible, creating a front door to the data and can also create useable functions.
 
 ### Use of an API
-There are different APIs that can be used for various reasons, for commercial and business use other than just for a developer. Twitter APIs allows for developers to gain access to the core twitter data and to allow access to search data and trend data to interact with. YouTube API allows for the integration of YouTube videos onto websites, rather than just linking the video and can also allow for data analysis on the videos.
+There are different APIs that can be used for various reasons, for commercial and business use other than just for a developer. Twitter APIs allows for developers to gain access to the core twitter data and to allow access to search data and trend data to interact with. YouTube API allows for the integration of YouTube videos onto websites, rather than just linking the video and can also allow for data analysis on the videos[2].
 
 ## Relationship with SDKs
 An SDK, or Software Development Kit is a kit used for creating a program, providing the user a set of tools, libraries, code samples and guides in order for developers to create the application, be it either for software framework, computers, operating systems or video game consoles.
@@ -27,3 +27,4 @@ Many APIs are used for a variety of purposes, be it to retrieve specific types o
 
 #### References
 1. Vangie Beal (2000). API - application program interface. [online]. Webopedia. Available from: <https://www.webopedia.com/TERM/A/API.html>. [Accessed 6 November 2018].
+2. Margaret Rouse (2005). software developer's kit (SDK). [online]. WhatIs.com. Available from: <https://whatis.techtarget.com/definition/software-developers-kit-SDK>. [Accessed 6 November 2018].
