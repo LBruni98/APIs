@@ -30,6 +30,15 @@ Other Websites can use the Steam Web API for use on their own services. Communit
 
 ## Security Issues surrounding APIs
 
+GENERAL INTRODUCTION
+
+SECTION(S) ON HOW THE API AFFECT SECURITY/A PROGRAM
+
+ATTACKS RELATING TO APIS
+
+CASE STUDIES
+
+CONCLUSION
 
 #### References
 1. Vangie Beal (2000). API - application program interface. [online]. Webopedia. Available from: <https://www.webopedia.com/TERM/A/API.html>. [Accessed 6 November 2018].
