@@ -1,6 +1,6 @@
 # Application Programming Interfaces
 ## APIs and Their Uses
-An API, or Application Programming Interface, is set of functions, routines and tools for the use of building applications, which define the communications between another app, delivering and requesting from one another. There are numerous APIs that can help provide a programmer with the fundamentals to help develop an application. Though it varies on the definition of one, the common description of an API is that it can aid in developing programs but also provide communication between one another.
+An API, or Application Programming Interface, is set of functions, routines and tools for the use of building applications, which define the communications between another app, delivering and requesting from one another. There are numerous APIs that can help provide a programmer with the fundamentals to help develop an application. Though it varies on the definition of one, the common description of an API is that it can aid in developing programs but also provide communication between one another[1].
 APIs are needed to help with data access and the mechanics to help make the software function. Retrieving data is key and APIs allow for this to be done as fast as possible, creating a front door to the data and can also create useable functions.
 
 ### Use of an API
@@ -26,3 +26,4 @@ Many APIs are used for a variety of purposes, be it to retrieve specific types o
 
 
 #### References
+1. Vangie Beal (2000). API - application program interface. [online]. Webopedia. Available from: <https://www.webopedia.com/TERM/A/API.html>. [Accessed 6 November 2018].
