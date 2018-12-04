@@ -29,17 +29,18 @@ The API can be used by other web services but mostly by steam itself for any fea
 Other Websites can use the Steam Web API for use on their own services. Community gaming trading websites have come up ever since Valve implemented an item feature in Team Fortress 2 that allows for users to craft and trade their items and as such, these websites can display trade advertisements and receiving the data based on that item, located in their steam inventory. There are sites similar that offer similar services using the Steam Web API, such as weapon skins from other games that utilise the same item based features.
 
 ## Security Issues surrounding APIs
+Being that APIs are used primarily for data based services, it would pose as a great risk should the data being taken be used for malicious intent. This section of APIs will evaluate the security exploits and potential attacks that surround that of APIs.
+```
+GENERAL INTRODUCTION ()
 
-GENERAL INTRODUCTION
+SECTION(S) ON HOW THE API AFFECT SECURITY/A PROGRAM ()
 
-SECTION(S) ON HOW THE API AFFECT SECURITY/A PROGRAM
+ATTACKS RELATING TO APIS ()
 
-ATTACKS RELATING TO APIS
+CASE STUDIES ()
 
-CASE STUDIES
-
-CONCLUSION
-
+CONCLUSION ()
+```
 #### References
 1. Vangie Beal (2000). API - application program interface. [online]. Webopedia. Available from: <https://www.webopedia.com/TERM/A/API.html>. [Accessed 6 November 2018].
 2. Margaret Rouse (2005). software developer's kit (SDK). [online]. WhatIs.com. Available from: <https://whatis.techtarget.com/definition/software-developers-kit-SDK>. [Accessed 6 November 2018].
