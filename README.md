@@ -52,7 +52,99 @@ The ‘WheelCollider’ is a special type of collider, where it is used for vehi
 
 The API in unity has a class in its library consisting of both these colliders to make up the cars in the prototype, which will help make up the positioning and values of the suspension, horsepower, etc. Not only will the scripting API be used for the cars but also the other elements such as the controller input and the camera controller, with their own predefined values and features that will help with the development of the game.
 
-###
+### 5.3 Developing the app with the API
+The game was developed with the handling and the creation of the car done mainly with the scripting API.
+
+![Demo](https://github.com/LBruni98/Road-Rage/blob/master/Development/Game%20Demo.PNG)
+
+Below is the code taken from one of the scripts of the game, the car controller script.
+
+```csharp
+//This code utilises the UnityEngine API, which contains the features used to create this script and other scripts
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine; //The API library in question
+
+public class CarController : MonoBehaviour {
+
+	public void GetInput() {
+        m_horizontalInput = Input.GetAxis("Horizontal"); //Gets the horizontal controller inputs from the controller script, this being the left analogue stick
+        m_verticalInput = Input.GetAxis("BothTriggers"); //Assigns the vertical input to both the Right and Left controller triggers
+    }
+
+    public void Steer()
+    {
+        m_steeringAngle = maxSteerAngle * m_horizontalInput; //For having the maximum amount of steering apply to the sticks
+        wheelFL.steerAngle = m_steeringAngle; //This makes the front left wheel the wheel that turns
+        wheelFR.steerAngle = m_steeringAngle; //This makes the front right wheel the wheel that turns
+    }
+
+    public void Accelerate() //FWD
+    {
+        wheelFL.motorTorque = m_verticalInput * motorPower; //For having the maximum amount of power apply to the pressure of the triggers. Assigns it to the front left
+        wheelFR.motorTorque = m_verticalInput * motorPower; //For having the maximum amount of power apply to the pressure of the triggers. Assigns it to the front right
+    }
+
+    //This piece of code updates the rotation of the wheels and applys the animation to each wheel
+    private void UpdateWheelPosition()
+    {
+        UpdateWheelPose(wheelFL, transformFL);
+        UpdateWheelPose(wheelFR, transformFR);
+        UpdateWheelPose(wheelRL, transformRL);
+        UpdateWheelPose(wheelRR, transformRR);
+    }
+    
+    //Making the wheels turn
+    private void UpdateWheelPose(WheelCollider collider, Transform transform)
+    {
+        Vector3 pos = transform.position; //Gets the position of each wheel
+        Quaternion quat = transform.rotation; //Provides rotation to the wheels
+
+        collider.GetWorldPose(out pos, out quat); //Gets the world position of the wheels
+
+        transform.position = pos;
+        transform.rotation = quat;
+    }
+
+    private void FixedUpdate()
+    {
+        GetInput(); //Gets the input of the player
+        Steer(); //Steering class
+        Accelerate(); //Makes the car move
+        UpdateWheelPosition(); //Wheels rotation
+
+        rb = this.GetComponent<Rigidbody>(); //Applys it to the rigidbody component (the car)
+        AnalogueSpeed.ShowSpeed(rb.velocity.magnitude,0,100); //Displays the speed of the car as a speedometer.
+    }
+
+  private float m_horizontalInput;
+  private float m_verticalInput;
+  private float m_steeringAngle;
+  
+  public WheelCollider wheelFL, wheelFR;
+  public WheelCollider wheelRL, wheelRR;
+  public Transform transformFL, transformFR;
+  public Transform transformRL, transformRR;
+  public float maxSteerAngle = 30;
+  public float motorPower = 300;
+  public Rigidbody rb;
+}
+```
+The key points of the script are the ‘WheelCollider’ variables, these being unique to unity and helped with the development of the wheel position, rotation and power and steering of the car. Quaternion is a feature from the API that is used to represent rotations and are applied to the wheels of the car to determine the rotations.
+
+Another point is the input. In conjunction with the input manager, this is used to help code the inputs and can receive the inputs from the player. This was used to determine the amount of power and brake force based on the car was going to be applied to the acceleration and braking.
+
+Below are the wheel colliders applied to the car.
+
+![Wheels in Action](https://github.com/LBruni98/Road-Rage/blob/master/Development/WheelColliders.PNG)
+
+### 5.4 Testing
+#### 5.4.1 White Box
+
+#### 5.4.2 Black Box
+
+#### 5.4.3 Improvements
+
 ## Security Issues surrounding APIs
 Being that APIs are used primarily for data based services, it would pose as a great risk should the data being taken be used for malicious intent. This section of APIs will evaluate the security exploits and potential attacks that surround that of APIs.
 
