@@ -140,10 +140,60 @@ Below are the wheel colliders applied to the car.
 
 ### 5.4 Testing
 #### 5.4.1 White Box
+The program was first tested using the white-box method, which I carried out to determine if the functions in the system worked to what was expected. This determined whether any of the functions worked or not, to which most of them had worked.
+
+![White-Box](https://github.com/LBruni98/APIs/blob/master/White-Box%20Testing.PNG)
 
 #### 5.4.2 Black Box
+Black-Box testing was carried out to determine if the program would’ve worked in the eyes of the user, where the functions were being tested via the actions of the car. To ensure that the results were genuine and reliable, the test was carried out by that of another class member.
+
+![Black-Box](https://github.com/LBruni98/APIs/blob/master/Black-Box%20Testing.PNG)
 
 #### 5.4.3 Improvements
+When viewing both the black-box and white-box test plans, second tests have been made to improve upon the failures. These improvements have been made during the testing of the program and were tested again after their implementation.
+
+The first improvement comes from the WheelColliders not turning with the actual wheel models. Upon actually driving the car, they appeared still despite moving forward.
+
+To fix this the wheels needed to be transforming, as in actually rotating with the WheelCollider itself, which was first defined in the code for it.
+
+```csharp
+//Making the wheels turn
+private void UpdateWheelPose(WheelCollider collider, Transform transform)
+{
+	Vector3 pos = transform.position; //Gets the position of each wheel
+	Quaternion quat = transform.rotation; //Provides rotation to the wheels
+
+	collider.GetWorldPose(out pos, out quat); //Gets the world position of the wheels
+
+	transform.position = pos;
+	transform.rotation = quat;
+}
+
+```
+
+Then the actual wheel models, which were defined as ‘FrontRightWheel’, ‘FrontLeftWheel’, etc. where placed in the transform section in the unity value settings that were predefined in the code.
+
+![Tranform](https://github.com/LBruni98/APIs/blob/master/Transform.PNG)
+
+The next issue was in the black-box testing. When the testing took place, the tester expected there to be a handbrake function in the game, but when trying to use it, nothing actually happened as there was in actuality no code for it and no button was bound to it.
+
+As a result, the code was implemented into the car controller, with it mimicking how an actual handbrake would work; the brakes being applied to the rear wheels and that causing the car to become unstable upon using the handbrake while moving.
+
+```csharp
+public void Handbrake()
+    {
+        if (Input.GetButtonDown("B_Button")) { //Once the B button is pressed,..
+            wheelRL.brakeTorque = brakePower; //the brakes are applied to the rear wheels
+            wheelRR.brakeTorque = brakePower; //the brakes are applied to the rear wheels
+        } else //otherwise
+        {
+            wheelRL.brakeTorque = 0; //The wheel brakes don't apply
+            wheelRR.brakeTorque = 0; //The wheel brakes don't apply
+        }
+    }
+```
+
+Here, the button that was bound to the car, marked ‘B’ on the Xbox controller that I was testing with, successfully applied the handbrake, causing the car to slide despite the car being coded as a FWD, which was the original intention.
 
 ## Security Issues surrounding APIs
 Being that APIs are used primarily for data based services, it would pose as a great risk should the data being taken be used for malicious intent. This section of APIs will evaluate the security exploits and potential attacks that surround that of APIs.
